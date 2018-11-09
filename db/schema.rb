@@ -15,10 +15,10 @@ ActiveRecord::Schema.define(version: 20181107020309) do
   create_table "points", force: :cascade do |t|
     t.integer  "puntos"
     t.integer  "user_id"
-    t.integer  "point_id"
+    t.integer  "trash_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["point_id"], name: "index_points_on_point_id"
+    t.index ["trash_id"], name: "index_points_on_trash_id"
     t.index ["user_id"], name: "index_points_on_user_id"
   end
 
